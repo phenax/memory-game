@@ -19,12 +19,12 @@ class MemoryBoard extends HTMLElement {
 
 		// Available images
 		this._images= [
-			'/components/img/img1.png',
-			'/components/img/img2.png',
-			'/components/img/img3.png',
-			'/components/img/img4.png',
-			'/components/img/img5.png',
-			'/components/img/img6.png'
+			'./components/img/img1.png',
+			'./components/img/img2.png',
+			'./components/img/img3.png',
+			'./components/img/img4.png',
+			'./components/img/img5.png',
+			'./components/img/img6.png'
 		];
 
 		this._root= this.attachShadow({mode:'open'});
