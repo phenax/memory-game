@@ -1,0 +1,57 @@
+<link rel='import' async href='mem-card.html' />
+
+<template data-elem='mem-board'>
+	<style>
+		:host {
+			position: relative;
+		}
+
+		.wrapper {
+			width: 100%;
+			min-height: 1px;
+			margin-top: 1em;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+
+		.board-row {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		.score-board {
+			text-align: left;
+			font-size: 1.2em;
+			position: relative;
+		}
+
+		.hint-btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 1;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			outline: none;
+			min-width: 10em;
+			font-size: .6em;
+			padding: .7em 1.5em;
+			cursor: pointer;
+		}
+	</style>
+
+	
+	<div class='score-board'>
+		<button class='hint-btn js-hint-btn'>Show All(-20)</button>
+		Score: 
+		<span class='js-score-board'></span>
+	</div>
+
+	<div class='js-container'></div>
+</template>
+
+<script async src='mem-board.js'></script>
